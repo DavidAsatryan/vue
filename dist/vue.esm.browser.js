@@ -1,5 +1,5 @@
 /*!
- * Vue.js v2.7.18
+ * Vue.js v2.7.19
  * (c) 2014-2024 Evan You
  * Released under the MIT License.
  */
@@ -3941,7 +3941,7 @@ function onErrorCaptured(hook, target = currentInstance) {
 /**
  * Note: also update dist/vue.runtime.mjs when adding new exports to this file.
  */
-const version = '2.7.18';
+const version = '2.7.19';
 /**
  * @internal type is manually declared in <root>/types/v3-define-component.d.ts
  */
