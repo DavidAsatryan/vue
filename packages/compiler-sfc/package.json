@@ -1,6 +1,6 @@
 {
   "name": "@vue/compiler-sfc",
-  "version": "4.1.0",
+  "version": "4.1.1",
   "description": "compiler-sfc for Vue 2",
   "main": "dist/compiler-sfc.js",
   "types": "dist/compiler-sfc.d.ts",
