@@ -1,5 +1,5 @@
 {
-  "name": "vue-template-compiler",
+  "name": "tmp-vue-template-compiler",
   "version": "4.1.4",
   "description": "template compiler for Vue 2.0",
   "main": "index.js",

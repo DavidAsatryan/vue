@@ -75,7 +75,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vuejs/vue.git"
+    "url": "git+https://github.com/DavidAsatryan/vue"
   },
   "keywords": [
     "vue"
@@ -87,7 +87,7 @@
   },
   "homepage": "https://github.com/vuejs/vue#readme",
   "dependencies": {
-    "@vue/compiler-sfc": "workspace:*",
+    "tmp-compiler-sfc": "workspace:*",
     "csstype": "^3.1.0"
   },
   "devDependencies": {

@@ -1,5 +1,5 @@
 {
-  "name": "vue-server-renderer",
+  "name": "tmp-vue-server-renderer",
   "version": "4.1.4",
   "description": "server renderer for Vue 2.0",
   "main": "index.js",
