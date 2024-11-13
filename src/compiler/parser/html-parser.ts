@@ -31,7 +31,6 @@ const conditionalComment = /^<!\[/
 
 // Special Elements (can contain anything)
 export const isPlainTextElement = makeMap('script,style,textarea', true)
-const reCache = {}
 
 const decodingMap = {
   '&lt;': '<',
@@ -167,27 +166,12 @@ export function parseHTML(html, options: HTMLParserOptions) {
     } else {
       let endTagLength = 0
       const stackedTag = lastTag.toLowerCase()
-      const reStackedTag =
-        reCache[stackedTag] ||
-        (reCache[stackedTag] = new RegExp(
-          '([\\s\\S]*?)(</' + stackedTag + '[^>]*>)',
-          'i'
-        ))
-      const rest = html.replace(reStackedTag, function (all, text, endTag) {
-        endTagLength = endTag.length
-        if (!isPlainTextElement(stackedTag) && stackedTag !== 'noscript') {
-          text = text
-            .replace(/<!\--([\s\S]*?)-->/g, '$1') // #7298
-            .replace(/<!\[CDATA\[([\s\S]*?)]]>/g, '$1')
-        }
-        if (shouldIgnoreFirstNewline(stackedTag, text)) {
-          text = text.slice(1)
-        }
-        if (options.chars) {
-          options.chars(text)
-        }
-        return ''
-      })
+
+      const closingTag = `</${stackedTag}>`;
+      endTagLength = closingTag.length
+      const closingTagIndex = html.toLowerCase().indexOf(closingTag);
+      const rest = html.slice(closingTagIndex + closingTag.length);
+
       index += html.length - rest.length
       html = rest
       parseEndTag(stackedTag, index - endTagLength, index)
