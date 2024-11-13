@@ -1,3 +1,7 @@
+## [4.1.6](https://github.com/DavidAsatryan/vue/compare/v4.1.5...v4.1.6) (2024-11-13)
+
+
+
 ## [4.1.5](https://github.com/DavidAsatryan/vue/compare/v2.7.16...v4.1.5) (2024-11-13)
 
 
