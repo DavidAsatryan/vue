@@ -174,7 +174,7 @@ async function publishPackage(pkgName, version, runIfNotDry) {
 
   step(`Publishing ${publishedName}...`)
   try {
-	  console.log('root', `pnpm publish ${releaseTag} --tag ${releaseTag} ---access`)
+	  console.log('root', pkgRoot, `pnpm publish ${releaseTag} --tag ${releaseTag} ---access`)
     await runIfNotDry(
       'pnpm',
       [

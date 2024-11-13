@@ -1,3 +1,7 @@
+## [4.1.3](https://github.com/vuejs/vue/compare/v2.7.16...v4.1.3) (2024-11-13)
+
+
+
 ## [4.1.2](https://github.com/vuejs/vue/compare/v2.7.16...v4.1.2) (2024-11-13)
 
 
