@@ -1,5 +1,5 @@
 /*!
- * Vue.js v4.1.6
+ * Vue.js v2.7.18
  * (c) 2014-2024 Evan You
  * Released under the MIT License.
  */
@@ -3230,7 +3230,7 @@ function onErrorCaptured(hook, target = currentInstance) {
 /**
  * Note: also update dist/vue.runtime.mjs when adding new exports to this file.
  */
-const version = '4.1.6';
+const version = '2.7.18';
 /**
  * @internal type is manually declared in <root>/types/v3-define-component.d.ts
  */
